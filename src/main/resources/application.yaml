@@ -1,12 +1,9 @@
 spring:
   datasource:
-    url: ${DB_URL}
+    url: jdbc:${DB_URL}
     username:
     password:
   jpa:
-    properties:
-      hibernate:
-        default_schema: public
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
